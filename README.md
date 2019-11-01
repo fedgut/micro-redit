@@ -1,24 +1,40 @@
-# README
+# Collaborative Project: Building with Active Record
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Project Specifications:
 
-Things you may want to cover:
+This project puts your knowledge of active record, models, and associations to the tests. You will build an application similar to Reddit (called Micro-Reddit) where a user can create a post and add comments to it. Full task description: [here](https://www.theodinproject.com/courses/ruby-on-rails/lessons/building-with-active-record-ruby-on-rails)
 
-* Ruby version
+## Built With:
 
-* System dependencies
+Ruby, Ruby on rails, sqlite3 local, postgresql development.
 
-* Configuration
+## Author
+Eduardo Gutierrez https://github.com/fedgut <br>
+Luis Preza https://github.com/men32z
 
-* Database creation
 
-* Database initialization
+## Getting started
 
-* How to run the test suite
+To get started with the app, clone the repo and then install the needed gems:
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+$ bundle install --without production
+```
 
-* Deployment instructions
+Next, migrate the database:
 
-* ...
+```
+$ rails db:migrate
+```
+
+Finally, run the test suite to verify that everything is working correctly:
+
+```
+$ rails test
+```
+
+If the test suite passes, you'll be ready to run the app in a local server:
+
+```
+$ rails server
+```
